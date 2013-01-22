@@ -34,9 +34,7 @@ lftp -c "set ftp:list-options -a;
 open ftp://$USER:$PASS@$HOST; 
 lcd $LCD;
 cd $RCD;
-mirror --reverse \
-       --delete \
-       --verbose"
+mirror --delete --verbose"
 
 ##
 # remove the database dump and php script form the server
