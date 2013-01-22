@@ -12,6 +12,7 @@ NOW=$(date +"%Y-%m-%d")
 ##
 ftp -inv $HOST << EOF
 user $USER $PASS
+lcd $LCD
 cd $RCD
 put dumpdb.php
 bye
