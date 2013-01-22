@@ -6,13 +6,14 @@ PASS="password"
 LCD="/path/of/your/local/dir"
 RCD="/path/of/your/remote/dir"
 NOW=$(date +"%Y-%m-%d")
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 ##
 # First put the the php script on the server
 ##
 ftp -inv $HOST << EOF
 user $USER $PASS
-lcd $LCD
+lcd $DIR
 cd $RCD
 put dumpdb.php
 bye
