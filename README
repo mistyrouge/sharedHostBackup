@@ -1,0 +1,12 @@
+!!! IMPORTANT !!!
+
+This tool will dump your whole database into a file that can be downloaded viw ftp
+and maybe via http depending on your site configuration. Do not use this script 
+if you database contains sensitive information such as passwords, users datas…
+
+How to use :
+
+1- Add your database connexion information in dumpdb.php
+2- Upload dumpdb.php to your remote shared server
+3- Add ftp connection information in backup.sh
+4- you can backup by executing ./backup.sh
