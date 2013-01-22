@@ -51,6 +51,7 @@ EOF
 # commit changes to git
 ##
 cd $LCD
+git add .
 git commit -a -m $NOW
 
 echo "--- The END ---"
