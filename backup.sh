@@ -15,7 +15,7 @@ user $USER $PASS
 cd $RCD
 put dumpdb.php
 bye
-EOF 
+EOF
 
 ##
 # Dump the database to db-backup.sql
@@ -47,7 +47,7 @@ cd $RCD
 delete dumpdb.php
 delete db-backup.sql
 bye
-EOF 
+EOF
 
 ##
 # commit changes to git
