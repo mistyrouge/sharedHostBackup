@@ -36,7 +36,7 @@ lftp -c "set ftp:list-options -a;
 open ftp://$USER:$PASS@$HOST; 
 lcd $LCD;
 cd $RCD;
-mirror --delete --verbose --exclude-glob .git*"
+mirror --delete --verbose --exclude-glob .git"
 
 ##
 # remove the database dump and php script form the server
