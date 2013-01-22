@@ -7,6 +7,10 @@ if you database contains sensitive information such as passwords, users datas…
 How to use :
 
 1- Add your database connexion information in dumpdb.php
-2- Upload dumpdb.php to your remote shared server
-3- Add ftp connection information in backup.sh
-4- you can backup by executing ./backup.sh
+2- Add ftp connection information in backup.sh
+3- you can backup by executing ./backup.sh
+
+Dependencies :
+- lftp
+- ftp
+- git
